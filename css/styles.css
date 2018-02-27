@@ -1,0 +1,471 @@
+@font-face {
+    font-family: SegoeWPN;
+    src: url(../fonts/SegoeWPN.ttf);
+}
+
+@font-face {
+    font-family: SegoeWpLight;
+    src: url(../fonts/SegoeWpLight.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+body {
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: "SegoeWpLight", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    width: 100%;
+    position: relative;
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;
+}
+
+header .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 55px 47px 0 97px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top ul.menu li {
+    display: inline;
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 962px) {
+    .header-top ul.menu li {
+        display: block;
+    }
+}
+
+.header-top .logo {
+    font-size: 118px;
+    color: #cacbcc;
+    font-family: "Mrs Eaves OT";
+    font-style: italic;
+    line-height: 0.7;
+}
+
+.header-top .menu li a {
+    font-size: 22px;
+    color: #cacbcc;
+    font-family: "SegoeWpLight", sans-serif;
+    transition: 0.3s;
+}
+
+.header-top .menu li a:hover {
+    text-shadow: 1px 1px 3px #fff;
+}
+
+.header-bottom {
+    display: flex;
+    padding-top: 64px;
+}
+
+@media screen and (max-width: 862px) {
+    .header-bottom{
+    flex-direction: column;
+    }
+
+    .header-bottom img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .header-bottom .introducing {
+        margin: 40px auto!important;
+    }
+}
+
+.header-bottom .introducing {
+    margin: 60px 0 0 74px;
+}
+
+.header-bottom .introducing h1 {
+    font-size: 64px;
+    font-weight: bold;
+    color: #fff;
+    font-family: SegoeWPN, sans-serif;
+}
+
+.header-bottom .introducing h3 {
+    color: #fff;
+    font-size: 44px;
+    margin: 5px 0 25px 0;
+}
+
+.header-bottom button {
+    background-color: #0ab062;
+    font-size: 22px;
+    font-family: "SegoeWpLight";
+    border: 2px solid #2f292d;
+    padding: 4px 19px;
+    opacity: 0.7;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.header-bottom button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+main .article-selection {
+    display: flex;
+    padding-top: 67px;
+}
+
+main .article-selection .article-categories {
+    width: 25%;
+    padding: 26px 0 35px 0;
+    box-shadow: inset 0 -6px 4px -4px rgba(0, 0, 0, .2);
+    margin-right: -1px;
+    font-family: SegoeWpLight;
+    color: #5f5f5f;
+    cursor: pointer;
+}
+
+main .article-selection .article-categories img {
+    display: block;
+    margin: 0 auto;
+}
+
+main .article-selection .article-categories p {
+    text-align: center;
+    font-size: 26px;
+    margin: 19px 0 3px 0;
+}
+
+
+main .article-selection .article-categories span {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+}
+
+.active-category {
+    font-weight: bold;
+    border-bottom: none!important;
+    box-shadow: 0px -6px 28px -14px black!important;
+}
+
+main .article {
+    padding: 57px;
+    border-bottom: 1px solid #cacbcc;
+    margin-bottom: 30px;
+}
+
+main .article img {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 790px) {
+    main .article img {
+        width: 90%;
+    }
+}
+
+main .article h3 {
+    font-size: 38px;
+    color: #5f5f5f;
+    margin-bottom: 30px;
+}
+
+main .article p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    color: #818181;
+    line-height: 24px;
+}
+
+.content-bottom {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    .content-bottom {
+        flex-direction: column;
+    }
+    .content-bottom img {
+        display: block;
+        width: 80%;
+        margin: 0 auto!important;
+    }
+}
+
+.content-bottom img {
+    margin-left: -16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .content-bottom .why-choose-us {
+        margin: 0 auto;
+    }
+}
+
+.content-bottom .why-choose-us h3 {
+    font-size: 32px;
+    color: #5f5f5f;
+    margin-left: -29px;
+    margin-bottom: 28px;
+}
+
+.content-bottom .why-choose-us ul {
+    width: 500px;
+}
+
+.content-bottom .why-choose-us ul li {
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: lighter;
+    position: relative;
+    color: #818181;
+    margin-top: 18px;
+}
+
+.content-bottom .why-choose-us ul li:before {
+    content: "";
+    background: url(../images/list-image.png);
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: -28px;
+    top: -2px;
+}
+
+.forms {
+    width: 100%;
+    border-top: 1px solid #cacbcc;
+}
+
+.forms .form-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 24px 0 35px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+    .forms .form-container {
+        flex-direction: column;
+    }
+
+    .forms .form-container .login-subscribe-form {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+}
+
+.forms .form-container .login-subscribe-form {
+    padding: 16px 19px;
+    width: 440px;
+    border-radius: 6px;
+}
+
+.forms .form-container .login-subscribe-form .inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forms .form-container .login-subscribe-form h3 {
+    font-size: 27px;
+    color: #fff;
+    margin-bottom: 20px;
+}    
+
+.forms .form-container .login-subscribe-form input {
+    font-family: SegoeWpLight, sans-serif;
+    width: 153px;
+    padding: 0 7px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+.forms .form-container .login {
+    background: #e67624;
+}
+
+.forms .form-container .login button {
+    font-family: SegoeWpLight, sans-serif;
+    padding: 4px 12px;
+    color: #fff;
+    background: #444444;
+    border: none;
+    transition: 0.3s;
+}
+
+.forms .form-container .login button:hover {
+    cursor: pointer;
+    background: #000;
+}
+
+.forms .form-container .subscribe {
+    background: #01d4f3;
+}
+
+.forms .form-container .subscribe button {
+    background: #029bb1;
+    font-family: SegoeWpLight, sans-serif;
+    padding: 4px 12px;
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+}
+
+.forms .form-container .subscribe button:hover {
+    cursor: pointer;
+    background: #3c62c3;
+}
+
+.forms .form-container .subscribe input {
+    width: 263px;
+}
+
+footer {
+    width: 100%;
+    background: url(../images/footer-bg.png) repeat;
+}
+
+footer .footer-content {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 35px 20px;
+}
+
+footer .footer-content .about-us {
+    margin-right: 50px;
+}
+
+footer .footer-content .about-us h4 {
+    font-size: 22px;
+    font-family: SegoeWpLight, sans-serif;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+footer .footer-content .about-us a {
+    display: block;
+    font-size: 13px;
+    font-family: SegoeWpLight, sans-serif;
+    color: #fff;
+    line-height: 22px;
+}
+
+footer .footer-content .about-us p {
+    font-size: 13px;
+    color: #fff;
+    line-height: 22px;
+    font-family: SegoeWpLight, sans-serif;
+    font-weight: lighter;
+}
+
+footer .footer-content .about-us span {
+    font-size: 13px;
+    font-family: SegoeWpLight, sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer .footer-content .testimonials {
+    width: 315px;
+}
+
+footer .footer-content .testimonials h4 {
+    display: inline-block;
+}
+
+footer .footer-content .testimonials .arrows {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #6e6e6e;
+    border-radius: 50%;
+}
+
+footer .footer-content .testimonials .arrows:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+footer .footer-content .testimonials .left-arrow {
+    margin: 0 6px 0 66px;
+    position: relative;
+}
+
+footer .footer-content .testimonials .left-arrow:after {
+    content: "";
+    position: absolute;
+    top: 29%;
+    left: 5px;
+    display: block;
+    border: solid #292b2b;
+    padding: 2px;
+    border-width: 0 0 2px 2px;
+    transform: rotate(45deg);
+}
+
+footer .footer-content .testimonials .right-arrow {
+    position: relative;
+}
+
+footer .footer-content .testimonials .right-arrow:after {
+    content: "";
+    position: absolute;
+    top: 29%;
+    left: 4px;
+    display: block;
+    border: solid #292b2b;
+    padding: 2px;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+}
+
+footer .footer-content .footer-logo .logo {
+    display: block;
+    font-size: 118px;
+    color: #6e6e6e;
+    font-family: "Mrs Eaves OT";
+    font-style: italic;
+    line-height: 0.7;
+    margin: 15px 0 35px 0;
+}
+
+footer .footer-content .footer-logo .author {
+    font-size: 13px;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

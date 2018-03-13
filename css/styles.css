@@ -175,8 +175,10 @@ main .article {
     margin-bottom: 30px;
 }
 
+
 main .article img {
     display: block;
+    max-width: 715px;
     margin: 0 auto;
 }
 

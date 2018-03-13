@@ -1,4 +1,5 @@
-$(function(){
+$(document).ready(function(){
+    $(function(){
     $(".data-categories").not(":eq(1)").hide();
 
     $('.article-categories').click(function(){
@@ -12,7 +13,6 @@ $(function(){
        $('.data-categories').hide().eq($(this).index()).fadeIn();
     })
 })
-
-
+}
 
 

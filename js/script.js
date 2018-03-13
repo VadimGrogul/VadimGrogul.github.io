@@ -13,6 +13,6 @@ $(document).ready(function(){
        $('.data-categories').hide().eq($(this).index()).fadeIn();
     })
 })
-}
+})
 
 

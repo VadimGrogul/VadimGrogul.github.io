@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Leo</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="fontawesome-5.0/on-server/css/fontawesome.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <header>
@@ -21,6 +22,17 @@
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+                <!--Кнопка меню, появляется при адаптиве-->
+                <div class="button-mob-menu"><i class="fa fa-bars"></i></div>
+                <!--Расскрывающиеся меню-->
+                <ul class="adaptive-menu">
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <!--Кнопка закрития всплывающего меню-->
+                <div class="button-close-menu"><i class="fa fa-times"></i></div>
             </div>
 
             <div class="header-bottom">
@@ -203,7 +215,8 @@
     </footer>
 
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <script type="text/javascript" src="js/adaptive_menu.js"></script>
     
 </body>
 </html>

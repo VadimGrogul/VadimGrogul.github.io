@@ -46,11 +46,71 @@ header .container {
     margin-left: 60px;
 }
 
-@media screen and (max-width: 962px) {
-    .header-top ul.menu li {
-        display: block;
-    }
+.header-top ul.adaptive-menu {
+    position: fixed;
+    top: 10px;
+    right: -370px;
+    padding: 88px 109px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: inset 0px 0px 84px -10px #fff;
+    background: linear-gradient(#273d60, #000);
+    z-index: 2;
 }
+
+.header-top ul.adaptive-menu li a {
+    font-size: 40px;
+    display: block;
+    color: #cacbcc;
+    font-family: "SegoeWpLight", sans-serif;
+    transition: 0.3s;
+    margin-bottom: 50px;
+}
+
+.header-top ul.adaptive-menu li:last-child a {
+    margin-bottom: 0;
+}
+
+
+/*Кнопки для расскрития и скрытия меню*/
+
+.header-top .button-mob-menu {
+    display: none;
+    background: #cacbcc;
+    border: 1px solid #000;
+    border-radius: 3px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.header-top .button-mob-menu .fa {
+    font-size: 26px;
+    color: #273d60;
+}
+
+.header-top .button-close-menu {
+    position: fixed;
+    top: 70px;
+    left: -60px;
+    background: #cacbcc;
+    border: 1px solid #000;
+    border-radius: 3px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+;
+}
+
+.header-top .button-close-menu .fa {
+    font-size: 26px;
+    color: #273d60;
+}
+
 
 .header-top .logo {
     font-size: 118px;
@@ -76,20 +136,7 @@ header .container {
     padding-top: 64px;
 }
 
-@media screen and (max-width: 862px) {
-    .header-bottom{
-    flex-direction: column;
-    }
 
-    .header-bottom img {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .header-bottom .introducing {
-        margin: 40px auto!important;
-    }
-}
 
 .header-bottom .introducing {
     margin: 60px 0 0 74px;
@@ -182,11 +229,6 @@ main .article img {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 790px) {
-    main .article img {
-        width: 90%;
-    }
-}
 
 main .article h3 {
     font-size: 38px;
@@ -209,26 +251,11 @@ main .article p {
     padding-bottom: 50px;
 }
 
-@media screen and (max-width: 1024px) {
-    .content-bottom {
-        flex-direction: column;
-    }
-    .content-bottom img {
-        display: block;
-        width: 80%;
-        margin: 0 auto!important;
-    }
-}
 
 .content-bottom img {
     margin-left: -16px;
 }
 
-@media screen and (max-width: 1024px) {
-    .content-bottom .why-choose-us {
-        margin: 0 auto;
-    }
-}
 
 .content-bottom .why-choose-us h3 {
     font-size: 32px;
@@ -238,7 +265,7 @@ main .article p {
 }
 
 .content-bottom .why-choose-us ul {
-    width: 500px;
+    max-width: 500px;
 }
 
 .content-bottom .why-choose-us ul li {
@@ -274,16 +301,6 @@ main .article p {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1024px) {
-    .forms .form-container {
-        flex-direction: column;
-    }
-
-    .forms .form-container .login-subscribe-form {
-        margin: 0 auto;
-        margin-bottom: 15px;
-    }
-}
 
 .forms .form-container .login-subscribe-form {
     padding: 16px 19px;

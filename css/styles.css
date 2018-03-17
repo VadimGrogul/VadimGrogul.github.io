@@ -103,7 +103,7 @@ header .container {
     text-align: center;
     line-height: 60px;
     cursor: pointer;
-;
+    z-index: 3;
 }
 
 .header-top .button-close-menu .fa {
@@ -296,7 +296,7 @@ main .article p {
 .forms .form-container {
     max-width: 1024px;
     margin: 0 auto;
-    padding: 24px 0 35px 0;
+    padding: 24px 10px 35px 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -304,7 +304,8 @@ main .article p {
 
 .forms .form-container .login-subscribe-form {
     padding: 16px 19px;
-    width: 440px;
+    max-width: 440px;
+    width: 100%;
     border-radius: 6px;
 }
 
@@ -383,13 +384,17 @@ footer .footer-content {
 
 footer .footer-content .about-us {
     margin-right: 50px;
+    min-width: 92px;
 }
+
+
 
 footer .footer-content .about-us h4 {
     font-size: 22px;
     font-family: SegoeWpLight, sans-serif;
     color: #fff;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 footer .footer-content .about-us a {
@@ -416,7 +421,7 @@ footer .footer-content .about-us span {
 }
 
 footer .footer-content .testimonials {
-    width: 315px;
+    max-width: 315px;
 }
 
 footer .footer-content .testimonials h4 {

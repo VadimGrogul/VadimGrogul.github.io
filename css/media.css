@@ -85,6 +85,7 @@
 
     footer .footer-content {
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     footer .footer-content .about-us {

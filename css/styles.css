@@ -186,7 +186,7 @@ main .article-selection {
 
 main .article-selection .article-categories {
     width: 25%;
-    padding: 26px 0 35px 0;
+    padding: 26px 5px 35px;
     box-shadow: inset 0 -6px 4px -4px rgba(0, 0, 0, .2);
     margin-right: -1px;
     font-family: SegoeWpLight;

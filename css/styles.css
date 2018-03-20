@@ -56,6 +56,7 @@ header .container {
     box-shadow: inset 0px 0px 84px -10px #fff;
     background: linear-gradient(#273d60, #000);
     z-index: 2;
+    opacity: 0.9;
 }
 
 .header-top ul.adaptive-menu li a {
@@ -65,6 +66,7 @@ header .container {
     font-family: "SegoeWpLight", sans-serif;
     transition: 0.3s;
     margin-bottom: 50px;
+    text-shadow: 3px 1px 10px #fff;
 }
 
 .header-top ul.adaptive-menu li:last-child a {
@@ -76,7 +78,7 @@ header .container {
 
 .header-top .button-mob-menu {
     display: none;
-    background: #cacbcc;
+    background: rgba(202, 203, 204, 0.7);
     border: 1px solid #000;
     border-radius: 3px;
     width: 50px;
@@ -95,7 +97,7 @@ header .container {
     position: fixed;
     top: 70px;
     left: -60px;
-    background: #cacbcc;
+    background: rgba(202, 203, 204, 0.7);
     border: 1px solid #000;
     border-radius: 3px;
     width: 50px;
